@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+:root {
+    --bg-color: #23252C;
+    --heading-color: #F5F5F5;
+    --p-color: #DCDCDC;
+    --heading-orange: #F3BF99;
+    --button-blue: #5093E2;
+    --icon-grey: #918E9B;
+    --card-background: #1A1B21;
+    --button-text: #374151;
+    --footer-color: #161619;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 317px;
+    height: 782px;
+    border-radius: 10px;
+    background-color: var(--card-background);
+    overflow: hidden;
+    box-shadow: 3px 3px 8px #000000;
 }
 
-.App-link {
-  color: #61dafb;
+.card-image {
+    width: 100%;
+    height: 317px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-role, .card-email {
+    margin: 0.5rem 0;
+    line-height: 0.5;
+}
+
+.card-name {
+    font-size: 25px;
+    margin-bottom: 0.1rem;
+    color: #FFFFFF;
+}
+
+.card-role {
+    font-size: 13px;
+    color: var(--heading-orange);
+}
+
+.card-email {
+    font-size: 11px;
+    text-decoration: none;
+    color: var(--heading-color);
+}
+
+.card-btn {
+    width: 100%;
+    padding: 0 35px;
+    margin: 0.8rem 0 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-btn > button:hover {
+    cursor: pointer;
+}
+
+.icon-email, .icon-linkedin {
+    margin-right: 0.5rem;
+}
+
+.btn-email {
+    color: var(--button-text);
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-linkedin {
+    color: #FFFFFF;
+    background-color: var(--button-blue);
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
 }
