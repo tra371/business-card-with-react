@@ -33,7 +33,7 @@ body {
     width: 317px;
     height: 782px;
     border-radius: 10px;
-    background-color: var(--card-background);
+    /* background-color: var(--card-background); */
     overflow: hidden;
     box-shadow: 3px 3px 8px #000000;
 }
@@ -51,18 +51,18 @@ body {
 .card-name {
     font-size: 25px;
     margin-bottom: 0.1rem;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 
 .card-role {
     font-size: 13px;
-    color: var(--heading-orange);
+    /* color: var(--heading-orange); */
 }
 
 .card-email {
     font-size: 11px;
     text-decoration: none;
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
 }
 
 .card-btn {
@@ -82,7 +82,7 @@ body {
 }
 
 .btn-email {
-    color: var(--button-text);
+    /* color: var(--button-text); */
     padding: 10px 25px;
     font-size: 14px;
     border-radius: 6px;
@@ -90,7 +90,7 @@ body {
 }
 
 .btn-linkedin {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     background-color: var(--button-blue);
     padding: 10px 25px;
     font-size: 14px;
